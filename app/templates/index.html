@@ -6,4 +6,23 @@
     <body>
         <h1>Welcome to Rock/Paper/Scissors!</h1>
     </body>
+    <hr>
+        {% block content %}
+        
+        <h2>Play against the computer.</h2>
+
+        <label for="player1">Choose your hand:</label>
+
+            <select name="player1" id="player1">
+            <option value="please_pick">--Please select--</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+            </select>
+        
+        
+        
+        
+        
+        {% endblock %}
 </html>
