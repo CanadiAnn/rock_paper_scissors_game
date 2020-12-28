@@ -2,24 +2,24 @@ import random
 
 rps = ["rock", "paper", "scissors"]
 
-player1 = "scissors"
-player2 = random.choice(rps)  #machine
+player = "scissors"
+computer = random.choice(rps)  #machine
 
-# print("Player 1:", player1)
-# print("Player 2:", player2)
+# print("Player:", player)
+# print("Computer:", computer)
 
 
-if player1 == player2:
+if player == computer:
     print("Null")
-elif player1 == "paper" and player2 == "rock":
+elif player == "paper" and computer == "rock":
     print("Paper covers rock: You win!")
-elif player1 == "rock" and player2 == "paper":
+elif player == "rock" and computer == "paper":
     print("Paper covers rock: You lose!")
-elif player1 == "scissors" and player2 == "rock":
+elif player == "scissors" and computer == "rock":
     print("Rock crushes scissors: You lose!")
-elif player1 == "rock" and player2 == "scissors":
+elif player == "rock" and computer == "scissors":
     print("Rock crushes scissors: You win!")    
-elif player1 == "paper" and player2 == "scissors":
+elif player == "paper" and computer == "scissors":
     print("Scissors cuts paper: You lose!")
-elif player1 == "scissors" and player2 == "paper":
+elif player == "scissors" and computer == "paper":
     print("Scissors cuts paper: You win!")
