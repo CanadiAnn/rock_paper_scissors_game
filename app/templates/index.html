@@ -1,17 +1,12 @@
-<html>
-    <head>
-        <!-- link to sylesheet -->
-    
-        <title>{{ title }} - Rock/Paper/Scissors App</title>
-    </head>
-    <body>
-        <h1>Welcome to Rock/Paper/Scissors!</h1>
-    </body>
-    <hr>
-        {% block content %}
-        
-        <h2>Play against the computer.</h2>
+{% extends 'base.html' %}
 
+{% block content %}
+
+    <header>
+        <h2>Play against the computer.</h2>
+        <hr>
+    </header>
+    <main>
         <label for="player">Choose your hand:</label>
 
             <select name="player" id="player">
@@ -24,15 +19,11 @@
             <button>Sumbit</button>
 
             <p id="computer">Computer plays:</p>
-            <p>Rock</p>
+            
            
             <p>The winner is:</p>
             <p></p>
-
-            
-        
-        
-        
-        {% endblock %}
-</html>
+    
+    </main>    
+{% endblock %}
 
